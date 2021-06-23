@@ -235,7 +235,7 @@
                             Remove Page
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour"
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="row">
@@ -371,6 +371,108 @@
                                                 100% {
                                                 top: 120px;
                                                 opacity: 0;
+                                                }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Solar Eclipse
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="animation">
+                                        <div class="sky">
+                                            <div class="moon"></div>
+                                            <div class="eclipse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="css-panel">
+                                        <button onclick="getHTMLeCSS('solar-eclipse')" class="css-copy">
+                                            <span class="material-icons-outlined">content_copy</span>
+                                        </button>
+                                        <div class="css-mobile d-block d-md-none">
+                                            Copiar CSS
+                                        </div>
+                                        <div class="css-other-devices d-md-block d-none">
+                                            <strong>HTML</strong>
+
+                                            <div id="solar-eclipse-html">
+                                                &lt;div class="sky"&gt;
+                                                &lt;div class="moon"&gt;&lt;/div&gt;
+                                                &lt;div class="eclipse"&gt;&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            </div>
+
+                                            <strong>CSS</strong>
+
+                                            <div id="solar-eclipse-css">
+                                                .sky {
+                                                position: relative;
+                                                width: 100%;
+                                                height: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                background: linear-gradient(to left bottom, #000f23, #002248);
+                                                }
+
+                                                .eclipse {
+                                                width: 150px;
+                                                height: 150px;
+                                                border-radius: 50%;
+                                                background: linear-gradient(to left bottom, #001732, #001a39);
+                                                position: absolute;
+                                                }
+
+                                                .moon {
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                position: absolute;
+                                                width: 150px;
+                                                height: 150px;
+                                                border-radius: 50%;
+                                                background: #d1cc75;
+                                                animation: eclipse 6s infinite linear;
+                                                box-shadow: 0px 0px 30px #d1cc75;
+                                                }
+
+                                                @keyframes eclipse {
+                                                0% {
+                                                box-shadow: 0px 0px 30px #d1cc75;
+                                                top: 50%;
+                                                left: 50%;
+                                                }
+                                                25% {
+                                                box-shadow: none;
+                                                top: 47%;
+                                                left: 53%;
+                                                }
+                                                50% {
+                                                box-shadow: 0px 0px 30px #d1cc75;
+                                                }
+                                                75% {
+                                                box-shadow: none;
+                                                top: 53%;
+                                                left: 47%;
+                                                }
+                                                100% {
+                                                box-shadow: 0px 0px 30px #d1cc75;
                                                 }
                                                 }
                                             </div>
